@@ -1,0 +1,18 @@
+Communication Issues: None
+Code on GitHub: Yes
+Screenshots at the root:Yes
+App Crashes: No
+MinSDK: 16
+Target: 30
+App Tested: On Emulator
+App tested: On phone
+SMS Correct Behavior: Yes
+Phone Correct Behavior: Yes
+Web Correct Behavior: Yes
+Map Correct Behavior: Yes
+Share Correct Behavior: Yes
+New Activity Correct Behavior: Yes
+Help Correct Behavior: Yes
+Settings Correct Behavior: Yes
+Image Correct: Yes
+Comments: Nicely done
