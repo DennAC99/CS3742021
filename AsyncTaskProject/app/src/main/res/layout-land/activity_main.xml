@@ -4,46 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="20dp"
+    android:layout_margin="5dp"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/tv_loading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/welcome_txt"
+        android:fontFamily="sans-serif-smallcaps"
         android:shadowColor="#0000FF"
         android:shadowDx="5"
         android:shadowDy="5"
         android:shadowRadius="20"
-        android:textSize="65sp"
-        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/welcome_txt"
         android:textColor="@color/white"
+        android:textSize="65sp"
         app:layout_constraintBottom_toTopOf="@+id/load_btn"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <fragment
-        android:id="@+id/imgFragment"
+        android:id="@+id/fooFragment"
         android:name="com.example.asynctaskproject.ImageFragment"
-        android:layout_height="0dp"
         android:layout_width="0dp"
-        app:layout_constraintHeight_default="percent"
-        app:layout_constraintHeight_percent=".6"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toEndOf="@+id/load_btn"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/load_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/load_image_txt"
-        android:textSize="30sp"
         android:backgroundTint="@color/coral_blue"
         android:onClick="loadImg"
-        app:layout_constraintBottom_toTopOf="@+id/imgFragment"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:text="@string/load_image_txt"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

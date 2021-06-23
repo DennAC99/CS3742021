@@ -6,6 +6,7 @@ import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import androidx.fragment.app.FragmentActivity;
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -51,7 +52,7 @@ public class ImageDownloader extends AsyncTask<String, Integer, Bitmap> {
     protected void onProgressUpdate(Integer... values) {
         TextView tv = (TextView) activity.findViewById(R.id.tv_loading);
         if (values[0] == 1) {
-            tv.setText("Loading...");
+            tv.setText(R.string.loading_text);
         } else {
             tv.setText("");
         }
@@ -65,6 +66,7 @@ public class ImageDownloader extends AsyncTask<String, Integer, Bitmap> {
         if (iv != null && img != null) {
             Log.i("hello6", "hello6");
             iv.setImageBitmap(img);
+            iv.setVisibility(View.VISIBLE);
         }
     }
 
