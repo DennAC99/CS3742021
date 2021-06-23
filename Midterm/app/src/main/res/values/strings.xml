@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Midterm</string>
+    <string name="Hint_text">Enter the number of Liters to convert...</string>
+    <string name="convert_btntext">Convert</string>
+    <string name="numgallons_text">__ Liters are<br/>__ Gallons !</string>
+    <string name="numgallonsoneline_text">__ Liters are __ Gallons !</string>
+    <string name="title_text">Liters to Gallons Converter</string>
+    <string name="invalid_text">Invalid Input, try using only a positive number or decimal!</string>
+</resources>

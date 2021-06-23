@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AsyncTaskProject</string>
+    <string name="welcome_txt">Welcome!</string>
+    <string name="load_image_txt">Load Image</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
