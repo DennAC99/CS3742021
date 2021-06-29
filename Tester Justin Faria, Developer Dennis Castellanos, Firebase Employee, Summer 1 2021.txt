@@ -1,0 +1,13 @@
+Late/Comm Issues: No
+Code On GitHub: Yes
+APK In Root: Yes
+Screenshots In Root: Yes
+The App Crashes: No
+Min SDK: 21
+Target: 31
+Tested: On Emulator
+Displays Initial Content of Firebase: Yes
+Adds an Employee and Displays the New List: Yes
+Does not send if field is empty: Yes
+Quality of UI and UX: H
+Comments: Very Clean!!!
