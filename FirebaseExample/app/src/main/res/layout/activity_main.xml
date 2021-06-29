@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_marginBottom="60sp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/AppTitle"
+        android:textSize="35sp"
+        android:textColor="@color/blue"
+        android:gravity="center"
+        android:textStyle="italic"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/employeeView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Default Text"
+            android:background="@color/lghtgrey"
+            android:textSize="25sp"
+            android:textColor="@color/black"/>
+    </ScrollView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Instructions"
+        android:textSize="30sp"
+        android:textColor="@color/dkblue"
+        android:textStyle="italic"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="20sp"
+        android:layout_weight="0.05">
+        <TextView
+            android:id="@+id/firstNameView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/firstname_txt"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_weight="1.5"
+            android:layout_gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/firstNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:inputType="textImeMultiLine|textCapSentences"
+            android:singleLine="true"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0.05"
+        android:layout_marginBottom="10sp">
+        <TextView
+            android:id="@+id/lastNameView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lastname_txt"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_weight="1.5"
+            android:layout_gravity="center_vertical"/>
+        <EditText
+            android:id="@+id/lastNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:imeOptions="actionDone"
+            android:inputType="textImeMultiLine|textCapSentences"
+            android:singleLine="true"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="addEmployee_toDatabase"
+        android:text="@string/submitbtn_txt"
+        android:textSize="30sp" />
+</LinearLayout>

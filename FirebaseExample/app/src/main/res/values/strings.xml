@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FirebaseExample</string>
+    <string name="AppTitle">Employee List Manager</string>
+    <string name="Instructions">Enter a new Employee...</string>
+    <string name="firstname_txt">First Name:</string>
+    <string name="lastname_txt">Last Name:</string>
+    <string name="submitbtn_txt">Submit</string>
+</resources>
